@@ -6,7 +6,7 @@ namespace WebApplication1.Models
     public class Evento
     {
         [Key]
-        public int Id { get; set; }
+        public Guid IdEvento { get; set; }
 
         [Required(ErrorMessage = "Nome é obrigatório")]
         [Display(Name = "Nome Completo")]
@@ -25,5 +25,11 @@ namespace WebApplication1.Models
         public string Descricao { get; set; }
 
         public DateTime Data { get; set; }
+
+        public Evento()
+        {
+            IdEvento = Guid.NewGuid();
+        }
+
     }
 }

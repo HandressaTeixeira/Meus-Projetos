@@ -41,7 +41,6 @@ C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\bin\Debug\netc
 C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.pdb
 C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.Views.dll
 C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.Views.pdb
-C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache
 C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cache
 C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cs

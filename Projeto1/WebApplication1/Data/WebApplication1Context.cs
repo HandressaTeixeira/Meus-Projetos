@@ -18,10 +18,7 @@ namespace WebApplication1.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Evento>()
-                .Property(c => c.Id)
-                .HasColumnName("EventoId");
-
+     
             modelBuilder.Entity<Evento>()
                 .Property(c => c.Descricao)
                 .HasColumnType("varchar(500)")

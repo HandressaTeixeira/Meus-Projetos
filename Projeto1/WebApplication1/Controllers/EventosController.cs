@@ -25,7 +25,7 @@ namespace WebApplication1.Controllers
         }
 
         // GET: Eventos/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
             {
@@ -33,7 +33,7 @@ namespace WebApplication1.Controllers
             }
 
             var evento = await _context.Evento
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.IdEvento == id);
             if (evento == null)
             {
                 return NotFound();
@@ -85,9 +85,9 @@ namespace WebApplication1.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Valor,Gratuito,Descricao,Data")] Evento evento)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Nome,Valor,Gratuito,Descricao,Data")] Evento evento)
         {
-            if (id != evento.Id)
+            if (id != evento.IdEvento)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace WebApplication1.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EventoExists(evento.Id))
+                    if (!EventoExists(evento.IdEvento))
                     {
                         return NotFound();
                     }
@@ -116,7 +116,7 @@ namespace WebApplication1.Controllers
         }
 
         // GET: Eventos/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
             {
@@ -124,7 +124,7 @@ namespace WebApplication1.Controllers
             }
 
             var evento = await _context.Evento
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.IdEvento == id);
             if (evento == null)
             {
                 return NotFound();
@@ -146,9 +146,9 @@ namespace WebApplication1.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool EventoExists(int id)
+        private bool EventoExists(Guid id)
         {
-            return _context.Evento.Any(e => e.Id == id);
+            return _context.Evento.Any(e => e.IdEvento == id);
         }
     }
 }
