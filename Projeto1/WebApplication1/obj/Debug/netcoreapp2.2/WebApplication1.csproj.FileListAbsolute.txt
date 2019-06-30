@@ -72,3 +72,8 @@ C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netc
 C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.dll
 C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.pdb
 C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csproj.CopyComplete
+C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache
+C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Acesso\Login.g.cshtml.cs
+C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Acesso\RecuperacaoSenha.g.cshtml.cs
+C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutLogin.g.cshtml.cs
+C:\Users\User\Documents\Projetos.NetCore\Projeto1\WebApplication1\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ModalMensagem.g.cshtml.cs
