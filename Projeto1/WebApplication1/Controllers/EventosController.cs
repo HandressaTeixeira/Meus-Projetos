@@ -53,7 +53,7 @@ namespace WebApplication1.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Valor,Gratuito,Descricao,Data")] Evento evento)
+        public async Task<IActionResult> Create(Evento evento)
         {
             if (ModelState.IsValid)
             {
@@ -65,9 +65,9 @@ namespace WebApplication1.Controllers
         }
 
         // GET: Eventos/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(Guid? id)
         {
-            if (id == null)
+            if (id == Guid.Empty)
             {
                 return NotFound();
             }
@@ -85,9 +85,9 @@ namespace WebApplication1.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Nome,Valor,Gratuito,Descricao,Data")] Evento evento)
+        public async Task<IActionResult> Edit(Evento evento)
         {
-            if (id != evento.IdEvento)
+            if (evento.IdEvento == Guid.Empty)
             {
                 return NotFound();
             }

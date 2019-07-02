@@ -41,7 +41,15 @@
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.IdEvento">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="row">
+    <div class="col-md-1">
+        <div class="form-group">
+            <a asp-action="Edit" asp-route-id="@Model.IdEvento" value="Salvar" class="btn btn-primary">Editar</a>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <div class="form-group">
+            <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+        </div>
+    </div>
 </div>
