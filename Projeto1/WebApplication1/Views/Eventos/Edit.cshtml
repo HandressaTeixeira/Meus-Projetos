@@ -19,12 +19,19 @@
             </div>
         </div>
         <div class="col-md-2">
-            <label></label>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Gratuito" /> @Html.DisplayNameFor(model => model.Gratuito)
-                </label>
+            </br>
+            <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                    <input asp-for="Gratuito" type="checkbox" class="custom-control-input" id="customCheck">
+                    <label class="custom-control-label" for="customCheck">@Html.DisplayNameFor(model => model.Gratuito)</label>
+                </div>
             </div>
+            @*
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Gratuito" /> @Html.DisplayNameFor(model => model.Gratuito)
+                    </label>
+                </div>*@
         </div>
         <div class="col-md-4">
             <div class="form-group">
